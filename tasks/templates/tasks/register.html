@@ -1,0 +1,17 @@
+{% extends 'tasks/main.html' %}
+{% load bootstrap4 %}
+{% block login %}
+
+<div class="header-bar">
+    <h1>Register</h1>
+</div>
+
+<div class="card-body form">
+    <form method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <input style="margin-bottom:5px;" class="btn btn-dark" type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="{% url 'login' %}">Login</a> </p>
+</div>
+{% endblock login %}

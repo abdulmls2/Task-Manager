@@ -1,0 +1,15 @@
+{% extends 'tasks/main.html' %}
+{% block login %}
+
+<div class="header-bar">
+    <a href="{% url 'task_list' %}">&#8592; Back</a>
+</div>
+
+<div class="card-body form">
+    <form method="POST" action="">
+        {%csrf_token%}
+        {{form.as_p}}
+        <input style="margin-bottom:15px;" class="btn btn-dark" type="submit" value="Submit">
+    </form>
+</div>
+{% endblock login %}
