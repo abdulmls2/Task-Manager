@@ -5,7 +5,7 @@ Task Manager -  Gestion de Tâches  (Django)
 
 
 
-# Features
+# Features - Fonctionnalités
 User authentication and registration. - Authentification et inscription des utilisateurs.
 
 Welcoming Email upon registration - Email de bienvenue lors de l'inscription 
